@@ -26,7 +26,7 @@ Since have used only one data set in this project have used international debt d
 - **Expected Outcome:**  A single numeric value representing the total global debt. This value will indicate the aggregate debt burden of all countries combined.
 - **Analysis Significance:** This information helps assess the financial health of nations collectively and may be used to compare historical debt trends over time.
 
- ##**2. Measure how diverse the dataset is and how many unique countries are being analyzed.**
+ ## 2. Measure how diverse the dataset is and how many unique countries are being analyzed.
 - **SQL Query:**
   ```sql
   SELECT COUNT(DISTINCT country) AS total_countries 
@@ -36,7 +36,7 @@ Since have used only one data set in this project have used international debt d
 - **Analysis Significance:**  Knowing the number of distinct countries helps in evaluating data coverage and understanding the geographical distribution of debt. This insight can guide further analysis on regional debt trends.
 
 
- ##**3. identify  Debt indicators that  classify different types of financial obligations. This  allows us to categorize and analyze various debt dimensions such as short-term vs. long-term debt or principal repayments vs. interest payments.**
+ ## 3. identify  Debt indicators that  classify different types of financial obligations. This  allows us to categorize and analyze various debt dimensions such as short-term vs. long-term debt or principal repayments vs. interest payments.
 - **SQL Query:**
   ```sql
   SELECT DISTINCT debt_indicator, description 
@@ -46,7 +46,7 @@ Since have used only one data set in this project have used international debt d
 - **Analysis Significance:**  Understanding different debt categories can help in identifying patterns, trends, and areas that require financial intervention. This data helps classify debt into meaningful categories for further study.
 
   
-###**4. Determine which country owes the most debt and assess its financial risk.**
+### 4. Determine which country owes the most debt and assess its financial risk.
 - **SQL Query:**
   ```sql
   SELECT country, SUM(debt_amount) AS total_debt 
@@ -59,7 +59,7 @@ Since have used only one data set in this project have used international debt d
 - **Analysis Significance:** This insight is crucial for policymakers and economists to understand which countries have the highest financial burden and may need debt restructuring.
   
 
--##**5.  To analyze distribution of debt across different categories and identify trends in debt accumulation.**
+### 5.To analyze distribution of debt across different categories and identify trends in debt accumulation.
 - **SQL Query:**
   ```sql
   SELECT debt_indicator, AVG(debt_amount) AS avg_debt 
@@ -71,7 +71,7 @@ Since have used only one data set in this project have used international debt d
 
 
 
-#### **6. Find out which country is making the highest repayments, which could indicate strong financial management or a high debt burden requiring large repayments.**
+### 6.Find out which country is making the highest repayments, which could indicate strong financial management or a high debt burden requiring large repayments.
 - **SQL Query:**
   ```sql
   SELECT country, SUM(principal_repayment) AS total_repayment 
@@ -85,7 +85,7 @@ Since have used only one data set in this project have used international debt d
 
   
 
-#### **7.** Identify the debt indicator that appears most frequently in the dataset.**
+### 7.Identify the debt indicator that appears most frequently in the dataset.
 - **SQL Query:**
   ```sql
   SELECT debt_indicator, COUNT(*) AS occurrence_count 
@@ -99,7 +99,7 @@ Since have used only one data set in this project have used international debt d
 
   
   
-###8.** To uncover notable patterns in the dataset, such as rising or falling debt levels, repayment trends, or country-specific anomalies.**
+### 8. To uncover notable patterns in the dataset, such as rising or falling debt levels, repayment trends, or country-specific anomalies.
 - **SQL Query Example:**
   ```sql
   SELECT country, debt_indicator, SUM(debt_amount) AS total_debt 
