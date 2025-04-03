@@ -11,7 +11,9 @@ This project will also serve as a practical demonstration of SQL querying techni
 
 Since have used only one data set in this project have used international debt dataset as csv uploaded in the repository
 ## Tools used
- postgress- used for data querying and analysis  
+ postgress- used for managing database 
+ 
+ Dbeaver for querying and managing database
 ### OBJECTIVES AND PROJECT ANALYSIS
 
 ### **Objectives and SQL Query Strategy:**
@@ -111,28 +113,27 @@ Since have used only one data set in this project have used international debt d
 - **Analysis Significance:**  Key findings can provide valuable insights into debt sustainability and economic vulnerabilities among nations. Identifying trends in debt accumulation can help in forecasting future economic conditions and implementing corrective policies.
 
 ---
+### Documentation Process:
 
-### **Documentation Process:**
+# 1.Data Exploration:
+Examine dataset columns and format and undersatand to extract the objectives needed
+Recognize dominant fields such as debt_indicator, debt_amount, country, and principal_repayment.
 
-1. **Data Exploration:**
+ # 2.Query Execution:
+Run all SQL queries in a structured manner.
+Check outputs and refine queries if necessary.
 
-   - Review dataset structure and columns.
-   - Identify key fields such as `country`, `debt_amount`, `debt_indicator`, and `principal_repayment`.
+ # 3.Insights & Analysis:
+Summarize key findings for example  repayment patterns, common debt indicators, leading debtor country.This is to
+Contrast repayment patterns by different debt indicators and regions.
 
-2. **Query Execution:**
 
-   - Run each SQL query in a structured manner.
-   - Validate outputs and refine queries if necessary.
+# 4.Final Report Preparation:
+Integrate all findings and results by
+documenting key observations and potential avenues for future research.
 
-3. **Insights & Analysis:**
 
-   - Summarize notable findings (e.g., highest debtor country, common debt indicators, trends in repayments).
-   - Compare trends across different debt indicators and regions.
 
-4. **Final Report Preparation:**
-
-   - Compile all results and insights.
-   - Document key observations and potential areas for further investigation.
 
 
 
